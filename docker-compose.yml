@@ -149,7 +149,7 @@ services:
 
   orchestrator-ui:
     container_name: orchestrator-ui
-    image: ${ORCH_UI_TAG:-ghcr.io/workfloworchestrator/example-orchestrator-ui:latest}
+    image: ${ORCH_UI_TAG:-ghcr.io/workfloworchestrator/example-orchestrator-ui:7.0.0}
     env_file:
       - ./docker/orchestrator-ui/orchestrator-ui.env
       - path: ./docker/overrides/orchestrator-ui/orchestrator-ui.env
@@ -162,7 +162,7 @@ services:
 
   orchestrator:
     container_name: orchestrator
-    image: ${ORCH_BACKEND_TAG:-ghcr.io/workfloworchestrator/orchestrator-core:latest}
+    image: ${ORCH_BACKEND_TAG:-ghcr.io/workfloworchestrator/orchestrator-core:4.7.1}
     env_file:
       - ./docker/orchestrator/orchestrator.env
       - ./docker/embeddings/embeddings.env
