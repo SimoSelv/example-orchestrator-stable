@@ -48,3 +48,7 @@ LazyWorkflowInstance("workflows.nsistp.validate_nsistp", "validate_nsistp")
 
 LazyWorkflowInstance("workflows.tasks.bootstrap_netbox", "task_bootstrap_netbox")
 LazyWorkflowInstance("workflows.tasks.wipe_netbox", "task_wipe_netbox")
+
+#simona
+LazyWorkflowInstance("workflows.tasks.check_node_health", "task_check_node_health")
+
